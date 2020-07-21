@@ -1,0 +1,46 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "allow": [
+    "net",
+    "env",
+    "read",
+    "write",
+    "plugin"
+  ],
+  "scripts": {
+    "start": {
+      "cmd": "deno run app.ts",
+      "desc": "Run the server.",
+      "unstable": true,
+      "env": {
+        "ENV": "development"
+      }
+    },
+    "test": {
+      "cmd": "deno test",
+      "desc": "Test the server.",
+      "unstable": true,
+      "env": {
+        "ENV": "test"
+      }
+    },
+    "format": {
+      "cmd": "deno fmt",
+      "desc": "Format the code.",
+      "allow": []
+    },
+    "prod": {
+      "cmd": "deno run app.bundle.js",
+      "desc": "Run the server.",
+      "unstable": true,
+      "env": {
+        "ENV": "production"
+      }
+    }
+  },
+  "logger": {
+    "fullscreen": false,
+    "quiet": false,
+    "debug": true
+  }
+}
