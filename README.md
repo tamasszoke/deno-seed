@@ -216,7 +216,7 @@ The passwords are hashed with salt (different for every user), using the [Bcrypt
 #### Routing
 
 The routing is in the following format: api/service/type/action
-For example, to login, use: api/auth/local/action
+For example, to login, use: api/auth/local/login
 
 #### Script runner
 
